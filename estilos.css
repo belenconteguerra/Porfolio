@@ -2,3 +2,125 @@
 
 /* CSS Document */
 /* Configuraciones */
+/* Tipografías */
+@font-face {
+    font-family: "press start";
+    src: url(fonts/PressStart2P-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "anta";
+    src: url(fonts/Anta-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "barlow medium";
+    src: url(fonts/Barlow-Medium.ttf) format(truetype);
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "barlow italic";
+    src: url(fonts/Barlow-Italic.ttf) format(truetype);
+    font-weight: italic;
+    font-size: italic;
+}
+
+@font-face {
+    font-family: "barlow regular";
+    src: url(fonts/Barlow-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "nicomoji";
+    src: url(fonts/NicoMoji-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+/* Colores */
+
+:root {
+    --header-footer: #12051E;
+  --rosa: #E94ACE;
+  --verde: #77E874;
+  --violeta: #7339C5;
+  --fondo: #170725;
+  --azulel-ementos: #2B2C5C;
+  --color-texto: #ffffff;
+}
+
+/* Aplicaciones */
+/* Body */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fondo);
+}
+
+/* Header */
+.navbar {
+    padding-left: 65px;
+    padding-right: 65px;
+    display: flex ;
+    justify-content: space-between;
+    align-content: center;
+    gap: 25px;
+    background-color: var(--header-footer);
+}
+
+ul.nav{
+        list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+a.boton{
+    padding: 15px;
+    background-color: var(--rosa);
+    border-radius: 30px;
+    font-family: "anta";
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+a.boton:hover{
+  background-color: var(--verde); 
+}
+img.logo:hover{
+content: url(img/Marca\ en\ verde.svg);
+}
+
+/* Main */
+
+
+/* Footer */
+footer{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+    background-color: var(--header-footer);
+}
+
+ul.foot{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    gap: 50px;
+    font-family: "barlow italic";
+    color: var(--color-texto);
+}
+li.texto-footer{
+    padding-top: 20px;
+    padding-right: 75px;
+}
