@@ -53,7 +53,7 @@
   --verde: #77E874;
   --violeta: #7339C5;
   --fondo: #170725;
-  --azulel-ementos: #2B2C5C;
+  --azulel-elementos: #2B2C5C;
   --color-texto: #ffffff;
 }
 
@@ -100,6 +100,29 @@ content: url(img/Marca\ en\ verde.svg);
 }
 
 /* Main */
+
+section.bienvenida{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+
+h1.primer-titulo{
+    font-family: "press start";
+    font-size: 64pt;
+    line-height: 1.1;
+    color: var(--color-texto);
+}
+
+h3.info-basica{
+    font-family: "anta";
+    font-size: 28pt;
+    color: var(--color-texto);
+}
+
 
 
 /* Footer */
