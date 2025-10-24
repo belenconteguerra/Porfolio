@@ -320,6 +320,7 @@ h3.info-basica{
 
 .sobre-mi {
   display: flex;
+  align-items: center;
   gap: 0px;
   margin-bottom: 6px;
 }
@@ -334,11 +335,11 @@ h3.info-basica{
   color: var(--color-texto);
   background: var(--azulel-elementos);
   margin-top: 110px;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
   padding: 50px;
-  border-radius: 90px;
+  border-radius: 80px;
   border-bottom-left-radius: 0px;
-  margin-left: -23px
+  margin-left: 0px
 }
 
 .info h1{
