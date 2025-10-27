@@ -64,9 +64,14 @@
 body {
   margin: 0;
   padding: 0;
+  border: 0;
   background-color: var(--fondo);
 }
 
+a {
+    color: inherit;
+    text-decoration: none; 
+}
 /* Header */
 .navbar {
     padding-left: 65px;
@@ -354,6 +359,128 @@ h3.info-basica{
 }
 
 /* Main Contacto */
+
+.contactos{
+  margin: 50px;
+  margin-bottom: 150px;
+}
+
+.titulo-subtitulo{
+align-content: center;
+text-align: left;
+margin: 40px;
+margin-left: 250px;
+margin-bottom: 80px;
+}
+
+.pregunta{
+  font-family: "press start";
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-texto);
+}
+
+.subtitulo{
+  font-family: "anta";
+  font-size: 43px;
+  color: var(--color-texto);
+}
+
+.bloque-contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contenido-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contenido-contacto input,
+.contenido-contacto textarea {
+  width: 100%;
+  background-color: var(--azulel-elementos);
+  color: var(--color-texto);
+  border-radius: 22px;
+  padding: 10px;
+  font-family: "barlow regular";
+  font-size: 24px;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.contenido-contacto textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-contacto .boton {
+  background-color: var(--rosa);
+  font-family: "anta";
+  font-size: 24px;
+  color: var(--color-texto);
+  border-radius: 15px;
+  margin-left: 495px;
+  width: 120px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-contacto .boton:hover{
+  background-color: var(--verde);
+  color: var(--negro);
+}
+
+/*Redes sociales y mail*/
+
+
+.tarjeta-contacto {
+  position: relative;
+  background-color: var(--azulel-elementos);
+  border-radius: 69px;
+  padding: 15px;
+  width: 553px;
+  height: 200px;
+  color:var(--color-texto);
+  font-family: "barlow regular";
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zarigueya {
+  position: absolute;
+  bottom: 195px;
+  left: 55%;
+  width: 244px;
+  height: 141px;
+}
+
+.tarjeta-contacto ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta-contacto li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.icono {
+  width: 45px;
+  height: 42px;
+}
 
 /* Footer */
 footer{
