@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- el idioma de la página es inglés? -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,16 @@
       <link rel="stylesheet" href="estilos.css" />
   <link rel="icon" href="img/favicon.png" type="icon">
 
+    <!-- en general GUARDA con el indentado que está muy flojo -->
+
 </head>
 <body>
 <header>
-      <nav class="navbar">
+      <nav class="navbar"> <!--no tiene sentido que la nav tenga una class que se llame nav y menos si es la unica etiqueta nav de la página-->
        <a href="index.html">
-        <img src="img/Marca en rosa.svg" alt="Zari logo" class="logo">
+        <img src="img/Marca en rosa.svg" alt="Zari logo" class="logo"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     </a>
-       <ul class="nav"> 
+       <ul class="nav"> <!-- si una ul tiene como nombre el mismo nombre de otra etiqueta existente, tal vez el problema es que no están bien semantizadas las etiqutas, fijate de repensar esto, además se hace un choclazo que haya un li con una a adentro. Además, las ul vienen con un padding-left por default que no está bueno que aparezca -->
         <li> 
         <a href="galeria.html" class="boton">
         Mis trabajos
@@ -35,7 +37,7 @@
 </header>
     
 <main>
-    <section class="bienvenida">
+    <section class="bienvenida"> <!-- guarda que toda esta sección te genera un scroll horizontal en tamaños de pantallas un pelín más chiquitas, probablemente porque la caja del texto no es flexible, fijate si no te conviene poner la imagen como background posicionada a la derecha para que se ajuste a la caja más fácil, porque, además, la palabra "bienvenidos" es muy larga y hace que se cruce con la imagen -->
         <div class="texto-bienvenida">
         <h1 class="primer-titulo">
             Bienvenidos a Zari design
@@ -45,31 +47,31 @@
         </h3>
     </div>
         <div class="personaje">
-        <img src="img/Vector personaje.svg" alt="vector personaje">
+        <img src="img/Vector personaje.svg" alt="vector personaje"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
         </div>
     </section>
 
 
-<section class="maquinas">
+<section class="maquinas"> <!-- fijate que esta parte para mobile va a estar muy compleja de reordenar por el position -->
   <div class="arcade">
-    <img src="img/maquina de arcade grande.svg" class="arcade-marco">
-    <img src="img/Lass-corriendo-zorro-gif.gif" class="pantalla">
+    <img src="img/maquina de arcade grande.svg" class="arcade-marco"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
+    <img src="img/Lass-corriendo-zorro-gif.gif" class="pantalla"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
   </div>
 
   <div class="arcade">
-    <img src="img/maquina de arcade grande.svg" class="arcade-marco">
+    <img src="img/maquina de arcade grande.svg" class="arcade-marco"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     <img src="img/stitches-muerte.gif" class="pantalla">
   </div>
 </section>
 
 <section class="videos">
-    <div class="foto">
-        <video src="img/video fotografia.mp4" controls> </video>
+    <div class="foto"> <!-- no es necesario que los videos estén dentro de un div, al igual que los textos, suman etiquetas en vano -->
+        <video src="img/video fotografia.mp4" controls> </video> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     </div>
 
     <div class="texto1">
     <p>
-            Homenaje a Grete Stern hecho para la materia Fotografía en el año 2024.
+            Homenaje a Grete Stern hecho para la materia Fotografía en el año 2024. <!-- con cuestiones de redacción, capaz que acá podés resumir esto con tres items para que solo sea lea el título, la materia y el año porque, es necesario que repitamos todo el tiemo "hecho para la materia" y "en el año" en todos los ejemplos que pongas o se puede sobreentender alguno de estos datos? -->
     </p>
     </div>
 
@@ -80,29 +82,29 @@
     </div>
 
     <div class="letra">
-        <video src="img/video letra experimental.mp4" controls></video>
+        <video src="img/video letra experimental.mp4" controls></video> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     </div>
 </section>
 
 <section class="cambiante">
-    <div>
-        <img src="img/logo cambiante.gif" alt="logo de marca" class="zari-cambiante">
+    <div> <!-- este div es totalmente innecesario, no te genera una estructura distinta ni tiene propiedades desde css -->
+        <img src="img/logo cambiante.gif" alt="logo de marca" class="zari-cambiante"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     </div>
 </section>
 
 </main>
 
-<footer>
-    <img src="img/Marca en rosa.svg" alt="Zari logo" class="logo">
+<footer> <!-- guarda que la estructura de todo el footer está muy raro, lo esperable es que hayan tres elementos hijos y el texto no es semánticamente parte de una lista -->
+    <img src="img/Marca en rosa.svg" alt="Zari logo" class="logo"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
     <ul class="foot">
         <li class="texto-footer">
             Belén Conte Guerra | Universidad Nacional de Lanús | Computación III
         </li>
         <a href="https://www.behance.net/belnconteguerra">
-            <img src="img/icono Be.svg" alt="Behance" class="behance">
+            <img src="img/icono Be.svg" alt="Behance" class="behance"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
         </a>
         <a href="https://www.instagram.com/zari._.design">
-            <img src="img/icono IG.svg" alt="Instagram" class="instagram">
+            <img src="img/icono IG.svg" alt="Instagram" class="instagram"> <!-- GUARDA EL NOMBRE DE LOS ARCHIVOS -->
         </a>
         <a href="contacto.html" class="boton">
             Contacto
