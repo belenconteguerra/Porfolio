@@ -69,19 +69,19 @@ body {
 }
 
 a {
-    color: inherit;
+    color: inherit; /* es necesaria la propiedad? */
     text-decoration: none; 
 }
 /* Header */
 .navbar {
-    padding-left: 65px;
+    padding-left: 65px; /* fijate de unificar los paddings */
     padding-right: 65px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex ;
     justify-content: space-between;
-    align-content: center;
-    gap: 25px;
+    align-content: center; /* esto no funciona */
+    gap: 25px; /* esto no tiene sentido sin responsive */
     background-color: var(--header-footer);
 }
 
@@ -101,7 +101,7 @@ a.boton{
     border-radius: 30px;
     font-family: "anta";
     color: var(--color-texto);
-    text-decoration: none;
+    text-decoration: none; /* no repitas propiedades que se heredan */
 }
 
 a.boton:hover{
@@ -176,7 +176,7 @@ h3.info-basica{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 0px; /* es necesaria esta propiedad? */
   padding: 50px;
 }
 
@@ -209,11 +209,11 @@ h3.info-basica{
   color: var(--color-texto);
   background: var(--azulel-elementos);
   box-sizing: border-box;
-  margin-top: 374px;
+  margin-top: 374px; /* en lugar de acomodar el texto con una medida fija prpobá con las alineaciones de flex, que son menos riesgosas para responsive */
   padding: 10px;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
+  border-top-left-radius: 0px; /* fijate de establecer todos los border en la misma línea */
 }
 
 .texto2 {
@@ -233,7 +233,7 @@ h3.info-basica{
 
 .cambiante{
   display: flex;
-  align-content: center;
+  align-content: center; /* esto es necesario? */
   justify-content: center;
   padding: 10px;
 }
@@ -484,11 +484,11 @@ margin-bottom: 80px;
 
 /* Footer */
 footer{
-    padding-left: 25px;
+    padding-left: 25px; /* unificar los paddings */
     padding-right: 25px;
     display: flex;
     justify-content:space-evenly;
-    align-content: center;
+    align-content: center; /* esta propiedad es necesaria? */
     background-color: var(--header-footer);
 }
 
