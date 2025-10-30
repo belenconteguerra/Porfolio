@@ -73,37 +73,52 @@ a {
 }
 /* Header */
 nav {
-    padding: 65px 65px;
-    padding-top: 10px;
+    padding: 60px 30px;
+    padding-top: 5px;
     padding-bottom: 10px;
     display: flex ;
     justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
     gap: 25px;
     background-color: var(--header-footer);
+    position: relative;
 }
 
 .logo{
   padding-top: 10px;
 }
 
+.menu-hamburguesa{
+  color: var(--verde);
+  padding-top: 10px;
+}
+
+.menu-hamburguesa:checked + ul.navbar{
+  height: 450px;
+}
 ul.navbar{
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding-left: 0;
+  list-style: none;
+  width: 89%;
+  background-color: var(--azulel-elementos);
+  opacity: 0.9;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  overflow: hidden;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-a.boton{
-    padding: 15px;
-    background-color: var(--rosa);
-    border-radius: 30px;
-    font-family: "anta";
-    color: var(--color-texto);
-}
-
-a.boton:hover{
-  background-color: var(--verde);
-  color: var(--negro);
+.links{
+  font-family: "anta";
+  font-size: 35pt;
+  color: var(--color-texto);
+  line-height: 52pt;
 }
 img.logo:hover{
 content: url(img/marca\ en\ verde.svg);
@@ -472,7 +487,7 @@ margin-bottom: 80px;
   resize: none;
 }
 
-.form-contacto .boton {
+.form-contacto .boton2 {
   background-color: var(--rosa);
   font-family: "anta";
   font-size: 24px;
@@ -485,7 +500,7 @@ margin-bottom: 80px;
   cursor: pointer;
 }
 
-.form-contacto .boton:hover{
+.form-contacto .boton2:hover{
   background-color: var(--verde);
   color: var(--negro);
 }
@@ -573,6 +588,44 @@ li.texto-footer{
 }
 
 /*responsive index*/
+
+/*menu hamburguesa*/
+@media (min-width: 768px) {
+  label.menu-hamburguesa{
+    display: none;
+  }
+  ul.navbar{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-left: 0;
+    background-color:var(--header-footer);
+    position:static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+  }
+
+.links{
+  font-family: "anta";
+  font-size: 20pt;
+  color: var(--color-texto);
+  line-height: 52pt;;
+}
+
+a.boton1{
+    padding: 10px;
+    background-color: var(--rosa);
+    border-radius: 35px;
+    font-family: "anta";
+    color: var(--color-texto);
+}
+
+a.boton:hover{
+  background-color: var(--verde);
+  color: var(--negro);
+}
+}
 /* Tablet */
 @media (max-width: 900px) {
   a.boton{
@@ -604,9 +657,7 @@ li.texto-footer{
 
 /*mobile*/
 @media (max-width: 360px) {
-a.boton{
-  display: none;
-}
+
 body{
     margin: 0;
   }
