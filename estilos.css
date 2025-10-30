@@ -499,6 +499,10 @@ margin-bottom: 80px;
   font-weight: bold;
   cursor: pointer;
 }
+a.boton2:hover{
+  background-color: var(--verde);
+  color: var(--negro);
+}
 
 .form-contacto .boton2:hover{
   background-color: var(--verde);
@@ -621,21 +625,13 @@ a.boton1{
     color: var(--color-texto);
 }
 
-a.boton:hover{
+a.boton1:hover{
   background-color: var(--verde);
   color: var(--negro);
 }
 }
 /* Tablet */
 @media (max-width: 900px) {
-  a.boton{
-    padding: 10px;
-    background-color: var(--rosa);
-    border-radius: 30px;
-    font-family: "anta";
-    color: var(--color-texto);
-    font-size: 13pt;
-}
 
   h1.primer-titulo{
     font-size: 35pt;
@@ -754,14 +750,6 @@ li.texto-footer{
 /*responsive galeria*/
 /*tablet*/
 @media (max-width: 900px) {
-  a.boton{
-    padding: 10px;
-    background-color: var(--rosa);
-    border-radius: 30px;
-    font-family: "anta";
-    color: var(--color-texto);
-    font-size: 13pt;
-}
   .titles {
     font-size: 24px;
   }
@@ -809,14 +797,7 @@ li.texto-footer{
 /*responsive sobre mi*/
 /* Tablet */
 @media (max-width: 900px) {
-  a.boton{
-    padding: 10px;
-    background-color: var(--rosa);
-    border-radius: 30px;
-    font-family: "anta";
-    color: var(--color-texto);
-    font-size: 13pt;
-}
+
     .sobre-mi {
         flex-wrap: wrap; 
         justify-content: left;
@@ -852,7 +833,7 @@ li.texto-footer{
     .sobre-mi {
         flex-direction: column-reverse;
         gap: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
 
     .info {
@@ -860,7 +841,7 @@ li.texto-footer{
         padding: 20px;
         margin-top: 60px;
         border-radius: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
 
     .info h1 {
@@ -876,23 +857,17 @@ li.texto-footer{
 
     .imagen img {
       position:relative;
-        max-width: 27%;
-        bottom: 990px;
-        left: 239px;
+      max-width: 80%;
+      left: 72px;
+      margin-bottom: 0px;
+      margin-top: 0px;
     }
 }
 
 /*responsive contacto*/
 /*tablet*/
 @media (max-width: 900px) {
-    a.boton{
-    padding: 10px;
-    background-color: var(--rosa);
-    border-radius: 30px;
-    font-family: "anta";
-    color: var(--color-texto);
-    font-size: 13pt;
-}
+
     .bloque-contacto {
         flex-wrap: wrap; 
         justify-content: center;
@@ -906,7 +881,7 @@ li.texto-footer{
         border-radius: 50px;
     }
 
-    .form-contacto .boton {
+    .form-contacto .boton2 {
         margin-left: 0;
         width: 100px;
     }
