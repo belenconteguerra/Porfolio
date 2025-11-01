@@ -65,6 +65,10 @@ body {
   padding: 0;
   border: 0;
   background-color: var(--fondo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 a {
@@ -86,7 +90,7 @@ nav {
 }
 
 .logo{
-  padding-top: 10px;
+  padding-top: 20px;;
 }
 
 .menu-hamburguesa{
@@ -244,7 +248,9 @@ h3.info-basica{
   box-sizing: border-box;
   margin-top: 374px;
   padding: 10px;
-  border-radius: 10px; border-bottom-left-radius: 0px; border-top-left-radius: 0px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .texto2 {
@@ -320,6 +326,7 @@ h3.info-basica{
 .galeria-item:hover {
   transform: scale(1.05);
   text-align: center;
+  cursor: pointer;
 }
 
 .seccion-galeria {
@@ -393,7 +400,6 @@ h3.info-basica{
   display: flex;
   align-items: center;
   gap: 0px;
-  margin-bottom: 6px;
 }
 
 .imagen {
@@ -427,16 +433,18 @@ h3.info-basica{
 /* Main Contacto */
 
 .contactos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 50px;
   margin-bottom: 150px;
 }
 
 .titulo-subtitulo{
-align-content: center;
 text-align: center;
 flex-wrap: wrap;
 margin: 40px;
-margin-left: auto;
+margin-left: 0px;
 margin-bottom: 80px;
 }
 
@@ -509,59 +517,38 @@ a.boton2:hover{
   color: var(--negro);
 }
 
+
+
 /*Redes sociales y mail*/
 
 
 .tarjeta-contacto {
-  position: relative;
   background-color: var(--azulel-elementos);
   border-radius: 69px;
-  padding: 25px;       
-  width: 600px;        
-  max-width: 90%;      
-  height: auto;        
+  padding: 20px;               
+  max-width: 36%;     
   color: var(--color-texto);
   font-family: "barlow regular";
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  box-sizing: border-box; 
 }
 
-.tarjeta-contacto .contenido-arriba {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
 .zarigueya {
   position: absolute;
-  bottom: 180px;
   left: 55%;
-  width: auto;
-  height: auto;
+  top: 80%;
 }
 
 .tarjeta-contacto ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
   gap: 12px;
-  padding: 0;
-  margin: 0;
 }
 
 .tarjeta-contacto li {
-  display: flex;
   align-items: left;
   gap: 10px;
-  font-size: 36px;           
-  word-break: break-word;     
-}
-
-.tarjeta-contacto li span {
-  max-width: calc(100% - 55px); 
-  overflow-wrap: break-word;
+  font-size: 40pt;   
+  line-height: 50pt;        
+  word-break: break-word;
 }
 
 
