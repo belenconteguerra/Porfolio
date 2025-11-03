@@ -14,12 +14,15 @@
        <a href="index.html">
         <img src="img/marca en rosa.svg" alt="Zari logo" class="logo"></a>
         <label for="label-hamburguesa" class="menu-hamburguesa">
-           <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg>
+           <img src="img/menu-hamburguesa.svg" alt="menu hamburguesa" class="boton-menu">
        </label>
        <input type="checkbox" class="menu-hamburguesa" id="label-hamburguesa" hidden>
        <ul class="navbar"> 
+        <li class="links">
+          <a href="index.html" class="inicio">
+            Inicio
+          </a>
+        </li>
         <li class="links"> 
         <a href="galeria.html" class="boton1">
         Mis trabajos
@@ -50,11 +53,11 @@
         </h2>
     </div>
   <div class="bloque-contacto">
-    <form id="contactoForm" class="form-contacto" method="post"  target="_blank">
+    <form id="contactoform" class="form-contacto" action="https://formspree.io/f/xovpowpl" method="POST" >
       <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre">
-      <input type="email" name="Email" id="Email" maxlength="30" placeholder="Email">
-      <textarea name="Mensaje" id="Mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
-      <input type="submit" class="boton2" value="Enviar">
+      <input type="email" name="mail" id="email" maxlength="30" placeholder="Email">
+      <textarea name="Mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
+      <input type="submit" id="botonenviar" class="boton2" value="Enviar">
     </form>
   </div>
    <div class="tarjeta-contacto">
@@ -73,7 +76,7 @@
         </a>
       </li>
       <li>
-        <img src="img/icono email.svg" alt="Correo" class="icono">
+        <img src="img/icono-email.svg" alt="Correo" class="icono">
         <span>zari.design@gmail.com</span>
       </li>
     </ul>
@@ -82,7 +85,7 @@
 </main>
 
 <footer>
-    <img src="img/marca en rosa.svg" alt="Zari logo" class="logo">
+    <img src="img/marca-en-rosa.svg" alt="Zari logo" class="logo">
     <ul class="foot">
         <li class="texto-footer">
             Belén Conte Guerra | Universidad Nacional de Lanús | Computación III
