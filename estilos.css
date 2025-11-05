@@ -643,7 +643,7 @@ a.boton1:hover{
 }
 
 /*mobile*/
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 
 body{
     margin: 0;
@@ -738,101 +738,6 @@ li.texto-footer{
 }
 }
 
-
-@media (min-width: 300px) {
-
-body{
-    margin: 0;
-  }
-
-section.bienvenida{
-  padding: 0;
-  padding-left: 10px;
-}
-
-h1.primer-titulo{
-    font-size: 15pt;
-}
-
-h3.info-basica{
-    font-size: 12pt;
-    width: 270px;
-}
-
-img.vector-personaje{
-  height: auto;
-  width: 70%;
-}
-
-section.maquinas{
-  margin: 5px;
-  padding-bottom: 0px;
-}
-
-img.arcade-marco{
-  width: 100%;
-}
-
-img.pantalla{
-  width: 220px;
-  height: 220px;
-  left: 45px;
-  top: 254px;
-}
-
-.foto video {
-  height: auto;
-  width: 80%;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-.texto1 {
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 10px;
-  border-radius: 10px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-.letra video {
-  height: auto;
-  width: 80%;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-.texto2 {
-  margin:0;
-  margin-bottom: 15px;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-
-}
-img.zari-cambiante{
-  height: auto;
-  width: 50%;
-}
-footer{
-    padding: 10px;
-}
-
-ul.foot{
-    list-style: none;
-    display: flex;
-    gap: 3px;
-}
-li.texto-footer{
-  display: none;
-}
-.behance, .instagram{
-  margin-right: 10px;
-}
-}
 /*responsive galeria*/
 /*tablet*/
 @media (max-width: 900px) {
@@ -914,7 +819,7 @@ li.texto-footer{
 }
 
 /*mobile*/
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 
     .sobre-mi {
         flex-direction: column-reverse;
@@ -949,43 +854,6 @@ li.texto-footer{
       margin-top: 0px;
     }
 }
-
-
-@media (min-width: 300px) {
-
-    .sobre-mi {
-        flex-direction: column-reverse;
-        gap: 0px;
-        margin-bottom: 5px;
-    }
-
-    .info {
-        width: 75%;
-        padding: 20px;
-        margin-top: 60px;
-        border-radius: 40px;
-    }
-
-    .info h1 {
-        font-size: 36px;
-        text-align: left;
-    }
-
-    .info p {
-        font-size: 15.5pt;
-        line-height: 23pt;
-        text-align:left;
-    }
-
-    .imagen img {
-      position:relative;
-      max-width: 80%;
-      left: 60px;
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-}
-
 
 /*responsive contacto*/
 /*tablet*/
@@ -1015,7 +883,7 @@ li.texto-footer{
 }
 
 /*mobile*/
-@media (max-width: 360px) {
+@media (max-width: 320px) {
     .contactos{
       display: flex;
       flex-wrap: none;
@@ -1083,72 +951,4 @@ li.texto-footer{
     }
 }
 
-@media (min-width: 300px) {
-    .contactos{
-      display: flex;
-      flex-wrap: none;
-      flex-direction: column;
-      align-items:flex-start;
-    }
-    .bloque-contacto {
-        flex-direction: column; 
-        align-items: center;
-        gap: 20px;
-        margin: 10px;
-        width: 90%;
-        max-width: none;
-    }
-
-
-    .tarjeta-contacto {
-      margin-top: 35px;
-      height: 50%;
-      padding: 15px;
-      border-radius: 20px;
-      width: 100%;
-      max-width: none;
-    }
-
-    .tarjeta-contacto ul {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding-left: 0px;
-    }
-
-    .tarjeta-contacto li {
-      font-size: 27.5pt;
-      line-height: 32pt;
-    }
-    .icono {
-      width: 15%;
-      display: flex;
-    }
-
-    .zarigueya {
-      display: none;
-    }
-
-    .form-contacto .boton {
-        width: 50%;
-        margin-left: 0;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .titulo-subtitulo {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .pregunta {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .subtitulo {
-        font-size: 25px;
-    }
-}
 
