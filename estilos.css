@@ -888,6 +888,7 @@ li.texto-footer{
       display: flex;
       flex-wrap: none;
       flex-direction: column;
+      align-items: flex-start;
     }
     .bloque-contacto {
         flex-direction: column; 
