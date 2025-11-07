@@ -130,7 +130,7 @@ content: url(img/marca-en-verde.svg);
 
 /* Main index*/
 /* Seccion bienvenida*/
-.bienvenida{
+section .bienvenida{
 display: flex;
 flex-wrap: wrap;
 padding: 70px;
