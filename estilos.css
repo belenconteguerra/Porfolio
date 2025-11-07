@@ -527,7 +527,6 @@ a.boton2:hover{
   background-color: var(--azulel-elementos);
   border-radius: 69px;
   padding: 20px;               
-  max-width: 36%;     
   color: var(--color-texto);
   font-family: "barlow regular";
 }
@@ -643,7 +642,7 @@ a.boton1:hover{
 }
 
 /*mobile*/
-@media (max-width: 320px) {
+@media (max-width: 600px) {
 
 body{
     margin: 0;
@@ -678,10 +677,10 @@ img.arcade-marco{
 }
 
 img.pantalla{
-  width: 220px;
-  height: 220px;
-  left: 45px;
-  top: 254px;
+  width: 70%;
+  height: 30%;
+  left: 15%;
+  top: 31%;
 }
 
 .foto video {
@@ -757,7 +756,7 @@ li.texto-footer{
 }
 
 /*mobile*/
-@media (max-width: 320px) {
+@media (max-width: 600px) {
 
   .titulos {
     flex-direction: column;
@@ -819,7 +818,7 @@ li.texto-footer{
 }
 
 /*mobile*/
-@media (max-width: 320px) {
+@media (max-width: 600px) {
 
     .sobre-mi {
         flex-direction: column-reverse;
@@ -859,15 +858,8 @@ li.texto-footer{
 /*tablet*/
 @media (max-width: 900px) {
 
-    .bloque-contacto {
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 30px;
-    }
 
-    .contenido-contacto,
-    .tarjeta-contacto {
-        max-width: 500px;
+    .contenido-contacto {
         width: 90%;
         border-radius: 50px;
     }
@@ -876,14 +868,17 @@ li.texto-footer{
         margin-left: 0;
         width: 100px;
     }
+    .tarjeta-contacto{
+      max-width: 100%;
+      width: 100%;
+    }
     .zarigueya {
-    width: 180px;
-    bottom: 190px;
+      display: none;
   }
 }
 
 /*mobile*/
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     .contactos{
       display: flex;
       flex-wrap: none;
