@@ -130,7 +130,7 @@ content: url(img/marca-en-verde.svg);
 
 /* Main index*/
 /* Seccion bienvenida*/
-
+.bienvenida{
 display: flex;
 flex-wrap: wrap;
 padding: 70px;
@@ -138,6 +138,7 @@ gap: 40px;
 flex-direction: row;
 justify-content: space-between;
 align-items: flex-end;
+}
 
 .texto-bienvenida{
   flex: 1 1 400px;
